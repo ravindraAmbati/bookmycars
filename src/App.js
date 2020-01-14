@@ -14,7 +14,7 @@ function App() {
         <p>
         For car rentals BookMyCars.in &nbsp;&nbsp; <img src={comingsoon} alt="comingsoon" /> 
         </p>
-        <p> For Inbound and Outbound tours and travels - click &nbsp;&nbsp;   
+        <p> For Inbound and Outbound tours and travels&nbsp;   
         <a
           className="App-link"
           href="https://rayntourism.com/"
