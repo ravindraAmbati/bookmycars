@@ -25,6 +25,7 @@ function App() {
         </a>
         </p>
       </header>
+      <footer className="App-powered">powered by RRA</footer>
     </div>
   );
 }

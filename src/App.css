@@ -15,12 +15,23 @@
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 95vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-powered {
+  background-color: #282c34;
+  min-height: 3vh;
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: right;
+  font-size: calc(5px + 2vmin);
   color: white;
 }
 
