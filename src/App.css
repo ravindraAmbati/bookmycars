@@ -6,3 +6,14 @@
 .App-footer{
   text-align: right;
 }
+.Background-image{
+  background-image: url('./images/bg1.jpg');
+}
+
+.Background-image2{
+  background-image: url('./images/bg2.jpg');
+}
+
+.Background-image3{
+  background-image: url('./images/bg3.jpg');
+}
