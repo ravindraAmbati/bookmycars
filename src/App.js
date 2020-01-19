@@ -21,6 +21,8 @@ import './App.css';
 
 import Nav from './components/nav';
 import Body from './components/body';
+import About from './components/about';
+import Pricing from './components/pricing';
 import Footer from './components/footer';
 
 
@@ -29,6 +31,8 @@ function App() {
     <div>
       <Nav/>
       <Body/>
+      <About/>
+      <Pricing/>
       <Footer/>
     </div>
   );

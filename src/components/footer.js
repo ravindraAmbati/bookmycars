@@ -2,13 +2,18 @@ import React from 'react';
 
 function Footer(){
     return(
+      <div id="indexPageFooter">
         <footer class="ftco-footer ftco-bg-dark ftco-section">
       <div class="container">
         <div class="row mb-5">
           <div class="col-md">
             <div class="ftco-footer-widget mb-4">
               <h2 class="ftco-heading-2">About BooKMyCars</h2>
-              <p>Best and experienced car rentals across twin cities and twin states - TS and AP.</p>
+              <p> As a leader in the car rental industry, 
+                    BookMyCars (BMC) understands that a traveller needs the best in terms of services that save both time and 
+                    money without compromising on comfort and safety. Our car services are designed with the objective to address 
+                    all the issues of safety, reliability, comfort, time as well savings so that you can travel worry-free, 
+                    wherever you go.</p>
               {/* <ul class="ftco-footer-social list-unstyled float-md-left float-lft mt-5">
                 <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
                 <li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li>
@@ -20,10 +25,10 @@ function Footer(){
             <div class="ftco-footer-widget mb-4 ml-md-5">
               <h2 class="ftco-heading-2">Information</h2>
               <ul class="list-unstyled">
-                <li><a href="#" class="py-2 d-block">About</a></li>
-                <li><a href="#" class="py-2 d-block">Services</a></li>
+                <li><a href="index.html#indexPageAbout" class="py-2 d-block">About Us</a></li>
+                <li><a href="index.html#indexPagePricing" class="py-2 d-block">Pricing</a></li>
                 <li><a href="#" class="py-2 d-block">Term and Conditions</a></li>
-                <li><a href="#" class="py-2 d-block">Best Price Guarantee</a></li>
+                {/* <li><a href="#" class="py-2 d-block">Best Price Guarantee</a></li> */}
                 {/* <li><a href="#" class="py-2 d-block">Privacy &amp; Cookies Policy</a></li> */}
               </ul>
             </div>
@@ -34,9 +39,9 @@ function Footer(){
               <ul class="list-unstyled">
                 <li><a href="#" class="py-2 d-block">FAQ</a></li>
                 <li><a href="#" class="py-2 d-block">Payment Option</a></li>
-                <li><a href="#" class="py-2 d-block">Booking Trips</a></li>
+                <li><a href="#" class="py-2 d-block">Booking Tips</a></li>
                 <li><a href="#" class="py-2 d-block">How it works</a></li>
-                <li><a href="#" class="py-2 d-block">Contact Us</a></li>
+                <li><a href="index.html#indexPageFooter" class="py-2 d-block">Contact Us</a></li>
               </ul>
             </div>
           </div>
@@ -65,6 +70,7 @@ function Footer(){
         </div>
       </div>
     </footer>
+    </div>
 
     );
 }
