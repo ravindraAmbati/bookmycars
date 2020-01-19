@@ -17,3 +17,42 @@
 .Background-image3{
   background-image: url('./images/bg3.jpg');
 }
+
+.Background-image4{
+  background-image: url('./images/bg4.jpg');
+  
+}
+
+.Background-image5{
+  background-image: url('./images/bg5.jpg');
+  
+}
+
+.sticky-Nav{
+  position: fixed;
+}
+
+.About-image1{
+  background-image: url('./images/about1.jpg');
+}
+
+.text-color-white{
+  color: white;
+}
+
+.text-color-red{
+color: red;
+}
+
+.text-color-yellow{
+  color: #f7b71d;
+}
+
+.text-font-col-header{
+  font-size: large;
+}
+
+.text-font-row-header{
+  font-size: x-large;
+}
+
