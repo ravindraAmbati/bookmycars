@@ -27,6 +27,14 @@ function form(){
 				<input type="text" class="form-control" id="time_pick" placeholder="Time"/>
 			</div>
 			<div class="form-group">
+				<label for="" class="label">Name</label>
+				<input type="text" class="form-control" id="name" placeholder="Name"/>
+			</div>
+			<div class="form-group">
+				<label for="" class="label">Phone Number</label>
+				<input type="text" class="form-control" id="ph_number" placeholder="Phone Number"/>
+			</div>
+			<div class="form-group">
 				<input type="submit" value="Book Car" class="btn btn-primary py-3 px-4"/>
 			</div>
 	    	</form>

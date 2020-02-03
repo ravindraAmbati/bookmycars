@@ -10,7 +10,9 @@ class BookCar extends React.Component{
 		  to : '',
 		  fromDate : '',
 		  toDate : '',
-		  time : ''
+		  time : '',
+		  name : '',
+		  number : ''
 		}
 	  }
 	
@@ -20,10 +22,22 @@ class BookCar extends React.Component{
 	  }
 	
 	onSubmitHandler = e =>{
-		// e.preventDefault()
+		e.preventDefault()
 		console.log(this.state)
-		// axios.get('http://localhost:5000/adminLogin/test')	
-		axios.post('http://localhost:5000/adminLogin/validate',{"username":"admin","password":"bookmycars"},{headers: {"Access-Control-Allow-Origin": "*"}})
+		// axios.get('http://localhost:5000/adminLogin/test')
+		// axios.post('http://localhost:5000/adminLogin/validate',{"username":"admin","password":"bookmycars"},{headers: {"Access-Control-Allow-Origin": "*"}})	
+		axios.post('http://http://bookmycars-test.ap-south-1.elasticbeanstalk.com:5000/booking/book',
+		{
+			"source":this.state.from,
+			"destination":this.state.to,
+			"startDate":this.state.fromDate,
+			"endDate":this.state.toDate,
+			"pickupTime":this.state.time,
+			"name":this.state.name,
+			"contactNo":this.state.number
+		},
+		{headers: {"Access-Control-Allow-Origin": "*"}}
+		)
 		.then(response => {
 		  console.log(response)
 		})
@@ -38,7 +52,7 @@ class BookCar extends React.Component{
 		  );
 	  }
 	  render(){
-		const {from,to,fromDate,toDate,time} = this.state;
+		const {from,to,fromDate,toDate,time,name,number} = this.state;
 		
 		return(
 			<form onSubmit={this.onSubmitHandler} class="request-form">
@@ -69,6 +83,16 @@ class BookCar extends React.Component{
 					<label for="" class="label">Pick-up time</label>
 					<input type="text" class="form-control" id="time_pick" placeholder="Time" name="time" 
 					value={time} onChange = {this.onChangeHandler}/>
+				</div>
+				<div class="form-group">
+					<label for="" class="label">Name</label>
+					<input type="text" class="form-control" id="name" placeholder="Name" name="name" 
+					value={name} onChange = {this.onChangeHandler}/>
+				</div>
+				<div class="form-group">
+					<label for="" class="label">Phone Number</label>
+					<input type="text" class="form-control" id="ph_number" placeholder="Phone Number" name="number" 
+					value={number} onChange = {this.onChangeHandler}/>
 				</div>
 				<div class="form-group">
 					<input type="submit" value="Book Car" class="btn btn-primary py-3 px-4"/>
