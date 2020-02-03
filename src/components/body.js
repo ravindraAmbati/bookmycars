@@ -1,5 +1,6 @@
 import React from 'react';
 import Form from './form';
+import BookCar from './BookCar';
 
 function Body(){
     return(
@@ -15,7 +16,8 @@ function Body(){
           <div class="col-lg-2 col">
 		  </div>
           <div class="col-lg-4 col-md-6 mt-0 mt-md-5 d-flex">
-		  	<Form/>
+		  	{/* <Form/> */}
+			  <BookCar/>
 		  </div>
         </div>
       </div>
