@@ -26,7 +26,7 @@ class BookCar extends React.Component{
 		console.log(this.state)
 		// axios.get('http://localhost:5000/adminLogin/test')
 		// axios.post('http://localhost:5000/adminLogin/validate',{"username":"admin","password":"bookmycars"},{headers: {"Access-Control-Allow-Origin": "*"}})	
-		axios.post('http://http://bookmycars-test.ap-south-1.elasticbeanstalk.com:5000/booking/book',
+		axios.post('http://bookmycars-test.ap-south-1.elasticbeanstalk.com/booking/bookAndReturnId',
 		{
 			"source":this.state.from,
 			"destination":this.state.to,
@@ -39,11 +39,32 @@ class BookCar extends React.Component{
 		{headers: {"Access-Control-Allow-Origin": "*"}}
 		)
 		.then(response => {
-		  console.log(response)
+		  console.log(response);
+		  this.setState({
+			from : '',
+			to : '',
+			fromDate : '',
+			toDate : '',
+			time : '',
+			name : '',
+			number : ''
+		  });
+		  alert(response.data);
 		})
 		.catch(error => {
-		  console.log(error)
+		  console.log(error);
+		  this.setState({
+			from : '',
+			to : '',
+			fromDate : '',
+			toDate : '',
+			time : '',
+			name : '',
+			number : ''
+		  });
+		  alert("Something went wrong try again!!!");
 		})
+		
 	  }
 	
 	  personForm = () => {
