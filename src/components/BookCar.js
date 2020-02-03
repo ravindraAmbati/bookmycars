@@ -26,7 +26,7 @@ class BookCar extends React.Component{
 		console.log(this.state)
 		// axios.get('http://localhost:5000/adminLogin/test')
 		// axios.post('http://localhost:5000/adminLogin/validate',{"username":"admin","password":"bookmycars"},{headers: {"Access-Control-Allow-Origin": "*"}})	
-		axios.post('http://http://bookmycars-test.ap-south-1.elasticbeanstalk.com:5000/booking/book',
+		axios.post('http://bookmycars-test.ap-south-1.elasticbeanstalk.com/booking/book',
 		{
 			"source":this.state.from,
 			"destination":this.state.to,
